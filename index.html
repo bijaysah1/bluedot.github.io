@@ -132,7 +132,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div class="head1">
       <h1 class="bluehead" style="margin-bottom: 0px; font-family: 'Jazz LET',fantasy; font-size: 85px; margin-bottom: none;">BlueDot</h1>
       <p style="margin-top: 0; color: white; position: all; opacity: 0.5;">After Covid-19 Pandemic</p>
-      <h2 id="showtexts"></h2>
+      <h5 id="showtexts"></h5>
     </div>
     <div id="right-button">
       <p >The Tourism industry is not going to be same.</p>
@@ -244,12 +244,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   var animate_text = ['Are we ready to adapt change?', ' ', ' '];
   
   (function showanimate(){
-    if (num=== animate_text.length) {
+    if (num === animate_text.length) {
       num = 0;
     }
     showtext = animate_text[num];
     texts = showtext.slice(0, ++i);
     document.getElementById('showtexts').textContent = showtext;
+    if (texts.length === showtext.length) {
+      num++;
+      i = 0;
+    }
     setTimeout(type, 400);
   })();
 </script>
