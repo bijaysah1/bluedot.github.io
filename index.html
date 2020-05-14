@@ -63,6 +63,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 }
 .rows{
 	width: 100%;
+	background-color: #504E4E;
 }
 .rows:after{
 	content: "";
@@ -72,6 +73,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .cols{
 	float: left;
 	width: 33.33%;
+}
+@media screen and (max-width: 600px){
+	.cols{
+		width: 100%;
+	}
 }
 </style>
 <body class="w3-black">
@@ -114,7 +120,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <header class="container" id="home" > 
     <img src="bluedothome3.png" alt="bluedothome1"  width="100%">
     <div id="btn" style="">
-    	<button style="padding-right: 15px; padding-left: 15px; border:none; border-radius: 20px; color: white; background-color: blue; "><a href="#contact" style="text-decoration: none;">Join Us</a></button>
+    	<button style="padding-right: 15px; padding-left: 15px; padding-top: 8px;
+    	padding-bottom: 8px; border:none; border-radius: 20px; color: white; background-color: blue; "><a href="#contact" style="text-decoration: none;"><b> Join Us</b></a></button>
     </div>
     
     <div id="leftbutom">
@@ -139,48 +146,56 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </div>
     
     <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-    <img src="dipak.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Dipak Sah</span> Techinal Head</p>
-    <p>Jane Doe saved us from a web disaster.</p><br>
-    
-    <img src="ravindra.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Ravindra Sah.</span> Operation head</p>
-    <p>No one is better than Jane Doe.</p>
-
-    <img src="ramesh.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Ramesh Mandal.</span> Market Analyst</p>
-    <p>No one is better than Jane Doe.</p>
-
-    <img src="bj.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Bijay Sah.</span> Web Developer</p>
-    <p>No one is better than Jane Doe.</p>
   <!-- End About Section -->
   </div>
   <div class="w3-padding-64 w3-content">
-  	 <h2 class="w3-text-light-grey">Our Team </h2>
+  	<center> <h2 class="w3-text-light-grey">Our Team </h2>
+  	<hr style="width:200px" class="w3-opacity"></center>
   	<div class="rows">
   		<div class="cols">
   			<center>
-  				<img src="ramesh.jpg" alt="Avatar"  style="width:80px; border-radius:50px;">
   				<br>
-  				<h2>Dipak Sah</h2>
+  				<h5>Dipak Sah</h5>
+  				<label>Email: </label>
+  				dipak.shah@bluedot.team
+  				<br>
+  				<label>Phone: </label>
+  				+9779804573784
+  				<br>
+  				<label>Address: </label>
+  				Janakpur, Nepal
   			</center>
   		</div>
   		<div class="cols">
   			<center>
-  				<img src="ramesh.jpg" alt="Avatar" style="width:80px; border-radius:50px;">
+  				
   				<br>
-  				<h2>Dipak Sah</h2>
+  				<h5>Ravindra Sah</h5>
+  				<label>Email: </label>
+  				dipak.shah@bluedot.team
+  				<br>
+  				<label>Phone: </label>
+  				+9779804573784
+  				<br>
+  				<label>Address: </label>
+  				Janakpur, Nepal
   			</center>
   		</div>
   		<div class="cols">
   			<center>
-  				<img src="ramesh.jpg" alt="Avatar"  style="width:80px; border-radius:50px;">
   				<br>
-  				<h2>Dipak Sah</h2>
+  				<h5>Ramesh Mandal</h5>
+  				<label>Email: </label>
+  				dipak.shah@bluedot.team
+  				<br>
+  				<label>Phone: </label>
+  				+9779804573784
+  				<br>
+  				<label>Address: </label>
+  				Janakpur, Nepal
   			</center>
   		</div>
+  		<br><br><br><br>
   	</div>
   </div>
   
