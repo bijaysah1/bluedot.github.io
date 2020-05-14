@@ -151,6 +151,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <span style="font-size: 16px; margin-top: 0;">50 million</span>
       </h6>
     </div -->
+    <div id="leftbutom">
+      <h6 id="showtexts"></h6>
+    </div>
   </header>
 
   <!-- About Section -->
@@ -248,11 +251,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </div>
 <script>
   var num = 0;
-  var i = 0;
-  var animate_text = ['Are we ready to adapt change?', 'Jobs at risk 50 million '];
+  var ts= 50;
+  var animate_text = 'Are we ready to adapt change?';
   
   (function showanimate(){
-    if (num === animate_text.length) {
+  	if (num < animate_text.length ) {
+			document.getElementById('showtexts').innerHTML += animate_text.charAt(num);
+			num++;
+			setTimeout(typeWriter, ts);
+		}
+    /*if (num === animate_text.length) {
       num = 0;
     }
     showtext = animate_text[num];
@@ -262,7 +270,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       num++;
       i = 0;
     }
-    setTimeout(type, 100);
+    setTimeout(type, 100);*/
   })();
 </script>
 </body>
