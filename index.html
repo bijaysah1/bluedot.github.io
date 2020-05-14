@@ -255,7 +255,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   var animate_text = 'Are we ready to adapt change?';
   
   (function showanimate(){
-  	if (num === animate_text.length ) {
+  	if (num < animate_text ) {
 			document.getElementById('showtexts').innerHTML += animate_text.charAt(num);
 			num++;
 			setTimeout(typeWriter, ts);
