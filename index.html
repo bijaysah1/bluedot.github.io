@@ -66,7 +66,17 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 	//background-color: #504E4E;
 	opacity: 0.75;
 }
+.rows-ft{
+	width: 100%;
+	//background-color: #504E4E;
+	opacity: 0.75;
+}
 .rows:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.rows-ft:after{
 	content: "";
 	display: table;
 	clear: both;
@@ -75,14 +85,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 	float: left;
 	width: 33.33%;
 }
+.cols-ft{
+	float: left;
+	width: 25%;
+}
 @media screen and (max-width: 600px){
 	.cols{
+		width: 100%;
+	}
+	.cols-ft{
 		width: 100%;
 	}
 	.rows{
 	width: 100%;
 	background-color: #504E4E;
 	opacity: 0.75;
+	padding-bottom: 20px;
 }
 }
 </style>
@@ -100,7 +118,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#team" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-users w3-xxlarge"></i>
     <p>TEAM</p>
   </a>
@@ -115,7 +133,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#team" class="w3-bar-item w3-button" style="width:25% !important">Team</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
@@ -139,25 +157,20 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">Blue Dot Project</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p style="opacity: 0.75;">The main objective of the BlueDot project is to digitize the tourism industry. the world is not going to be the same after the COVID-19 pandemic and the tourism industry is one of the worst affected industries. In order to minimize the economic losses digital economic transformation is needed. whether you are an individual or travel agency willing to work with us in the future, please contact us for further details and plans.
+    <p style="opacity: 0.85; margin-bottom: 15px; color: white;">The main objective of the BlueDot project is to digitize the tourism industry. the world is not going to be the same after the COVID-19 pandemic and the tourism industry is one of the worst affected industries. In order to minimize the economic losses digital economic transformation is needed. whether you are an individual or travel agency willing to work with us in the future, please contact us for further details and plans.
     </p>
-    <!--div style="background-image: url('about.png'); height: 700px; width: 100%; background-repeat: no-repeat; background-attachment: scroll;">
-    </div-->
     <img src="about.png" alt="about"  width="100%">
-   
-    
-    <!-- Grid for pricing tables -->
-    
-    <!-- End Grid/Pricing tables -->
-    </div>
+  </div>
     
     <!-- Testimonials -->
   <!-- End About Section -->
-  </div>
-  <div class="w3-padding-64 w3-content">
-  	<center> <h2 class="w3-text-light-grey">Our Team </h2>
-  	<hr style="width:200px" class="w3-opacity"></center>
-  	<div class="rows">
+</div>
+  <div class="w3-padding-64 w3-content" id="team">
+  	<div align="center"><!-- starting of core team-->
+  		<h2 class="w3-text-light-grey">Core Team Members </h2>
+  		<hr style="width:200px" class="w3-opacity">
+  	</div>
+  	<div class="rows" style="margin-bottom: 20px;">
   		<div class="cols">
   			<center>
   				<br>
@@ -166,7 +179,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   				<a href="mailto:dipak.shah@bluedot.team">dipak.shah@bluedot.team</a>
   				<br>
   				<label>Phone: </label>
-  				<a href="tel:+977"></a>+9779804573784
+  				<a href="tel:+9779844024092"> +9779844024092</a>
   				<br>
   				<label>Address: </label>
   				Janakpur, Nepal
@@ -174,15 +187,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   		</div>
   		<div class="cols">
   			<center>
-  				
   				<br>
   				<h5>Ravindra Sah</h5>
   				<label>Email: </label>
-  				dipak.shah@bluedot.team
+  				<a href="maiilto:ravindra.shah@bluedot.team">ravindra.shah@bluedot.team</a>
   				<br>
   				<label>Phone: </label>
-  				+9779804573784
-  				<br><br>
+  				<a href="tel:+8613126839979">+8613126839979</a>
+  				<br>
   				<label>Address: </label>
   				Janakpur, Nepal
   			</center>
@@ -192,40 +204,93 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   				<br>
   				<h5>Ramesh Mandal</h5>
   				<label>Email: </label>
-  				<a href="mailto:dipak.shah@bluedot.team">dipak.shah@bluedot.team</a>
+  				<a href="mailto:ramesh.mandal@bluedot.team">ramesh.mandal@bluedot.team</a>
   				<br>
   				<label>Phone: </label>
-  				<a href="tel:+9779811848473">+9779804573784</a>
+  				<a href="tel:+9779817744626">+9779817744626</a>
   				<br>
   				<label>Address: </label>
   				Janakpur, Nepal
   			</center>
   		</div>
-  		<br><br><br><br>
-  	</div>
-  </div>
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">Our Team </h2>
+  		</div><!-- end of core team-->
+  		<div >
+  			<div align="center"><!-- start of founding  team member -->
+  		<h2 style="margin-top: 10px;">Founding Team Members </h2>
+  		<hr style="width:200px" class="w3-opacity">
+  		</div>
+  		</div>
+  	<div class="rows-ft">
+  		<div class="cols-ft">
+  			<center>
+  				<br>
+  				<h5>Bijay Kumar Sah</h5>
+  				<label>Email: </label>
+  				<a href="mailto:bjsah712@gmail.com">bjsah712@gmail.com</a>
+  				<br>
+  				<label>Phone: </label>
+  				<a href="tel:+9779865188940">+9779865188940</a>
+  				<br>
+  				<label>Address: </label>
+  				Simara, Nepal
+  			</center>
+  		</div>
+  		<div class="cols-ft">
+  			<center>
+  				<br>
+  				<h5>Aaditiya Sah</h5>
+  				<label>Email: </label>
+  				<a href="mailto:badboony0512@gmail.com">badboony0512@gmail.com</a>
+  				<br>
+  				<label>Phone: </label>
+  				<a href="tel:+9779866542466">+9779866542466</a>
+  				<br>
+  				<label>Address: </label>
+  				Simara, Nepal
+  			</center>
+  		</div>
+  		<div class="cols-ft">
+  			<center>
+  				<br>
+  				<h5>Bivek Chaudhary</h5>
+  				<label>Email: </label>
+  				<a href="mailto:Bivekchy54726@gmail.com">Bivekchy54726@gmail.com</a>
+  				<br>
+  				<label>Phone: </label>
+  				<a href="tel:+9779863351146">+9779863351146</a>
+  				<br>
+  				<label>Address: </label>
+  				Simara, Nepal
+  			</center>
+  		</div>
+  		<div class="cols-ft">
+  			<center>
+  				<br>
+  				<h5>Sandip Sah</h5>
+  				<label>Email: </label>
+  				<a href="mailto:sahsandip08@gmail.com">sahsandip08@gmail.com</a>
+  				<br>
+  				<label>Phone: </label>
+  				<a href="tel:+9779811838948">+9779811838948</a>
+  				<br>
+  				<label>Address: </label>
+  				Simara, Nepal
+  			</center>
+  		</div>
+  	</div>	
+  		<!-- end of founding Team member-->
+  	<div align="center" class="w3-padding-64 w3-content">
+    <h2 class="w3-text-light-grey">Somethuins </h2>
     <hr style="width:200px" class="w3-opacity">
 
     <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-        <img src="alibaba.png" style="width:100%">
-      </div>
-
-      <div class="w3-half">
-        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/chef.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/p6.jpg" style="width:100%">
-      </div>
+    	<img src="alibaba.png" alt="bluedothome1"  width="100%">
     <!-- End photo grid -->
     </div>
+</div>
+  
+  <!-- Portfolio Section -->
+  
   <!-- End Portfolio Section -->
   </div>
 
@@ -236,8 +301,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
     <div class="w3-section">
       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i><a href="tel:+8613126839979">Phone: +8613126839979</a></p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> <a href="mailto:contact@bluedot.team" style="text-decoration: none;">Email: contact@bluedot.team</a></p>
     </div><br>
     <p>Lets get in touch. Send me a message:</p>
 
@@ -282,17 +347,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 			num++;
 			setTimeout(TypeWriter, ts);
 		}
-    /*if (num === animate_text.length) {
-      num = 0;
-    }
-    showtext = animate_text[num];
-    texts = showtext.slice(0, ++i);
-    document.getElementById('showtexts').textContent = showtext;
-    if (texts.length === showtext.length) {
-      num++;
-      i = 0;
-    }
-    setTimeout(type, 100);*/
   })();
 </script>
 </body>
