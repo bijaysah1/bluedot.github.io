@@ -43,6 +43,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 #btn{
 	bottom:400px; position: absolute; right: 50%;
 }
+.form-row{
+	width: 100%;
+}
+.form-row:after{
+	content: "";
+	display:table;
+	clear: both;
+}
+.form-col{
+	float: left;
+	width: 35%;
+}
+.form-col1{
+	float: left;
+	width: 65%;
+}
 @media screen and (max-width: 600px){
 #right-button{
   position: absolute;
@@ -296,27 +312,34 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <h2 class="w3-text-light-grey">Contact Us</h2>
     <hr style="width:200px" class="w3-opacity">
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i><a href="tel:+8613126839979">Phone: +8613126839979</a></p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> <a href="mailto:contact@bluedot.team" style="text-decoration: none;">Email: contact@bluedot.team</a></p>
-    </div><br>
-    <p>Lets get in touch. Send me a message:</p>
+    <div class="form-row">
+    	<div class="form-col">
+    		<div class="w3-section">
+		      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+		      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i><a href="tel:+8613126839979">Phone: +8613126839979</a></p>
+		      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> <a href="mailto:contact@bluedot.team" style="text-decoration: none;">Email: contact@bluedot.team</a></p>
+		    </div>
+    	</div>
+    	<div class="form-col1">
+    		<p>Lets get in touch. Send me a message:</p>
+		    <form action="/action_page.php" target="_blank">
+		      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+		      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+		      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+		      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+		      <p>
+		        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+		          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+		        </button>
+		      </p>
+		    </form>
+    	</div>
+    </div>
 
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
+    
   <!-- End Contact Section -->
   </div>
   
